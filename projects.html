@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects — Abhijit Deshpande</title>
+  <meta name="description" content="Projects by Abhijit Deshpande — nihiramusic.in, CricketIQ, VisaFlow and FamDeck — with why they exist, how they work and where they stand.">
+  <meta name="author" content="Abhijit Deshpande">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="color-scheme" content="light">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Abhijit Deshpande">
+  <meta property="og:title" content="Projects — Abhijit Deshpande">
+  <meta property="og:description" content="Projects by Abhijit Deshpande — nihiramusic.in, CricketIQ, VisaFlow and FamDeck — with why they exist, how they work and where they stand.">
+  <meta property="og:locale" content="en_GB">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
+    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main"><a href="projects.html" aria-current="page">Projects</a><a href="notes.html">Field notes</a><a href="now.html">Now</a><a href="about.html">About</a></nav>
+  </header>
+  <main id="main" class="page-main" tabindex="-1">
+    <p class="eyebrow">THE WORKBENCH</p>
+    <h1 class="page-title">Projects &amp; experiments<span aria-hidden="true">.</span></h1>
+    <p class="page-intro">Things I've built, am building or am exploring. Each one says why it exists, how it works and where it stands today — finished or not.</p>
+    <p class="status-legend" aria-label="Status labels"><span class="status status-live">Live</span> <span>public and working</span><span class="status status-draft">Prototype</span> <span>works, but early</span><span class="status status-draft">In progress</span> <span>being built</span></p>
+    <section class="project-list" aria-label="Projects">
+    <article class="project-detail" id="nihiramusic" aria-labelledby="nihiramusic-title">
+      <div class="detail-content">
+        <p class="eyebrow">WEB · AUTOMATION · AI-DIRECTED DEVELOPMENT</p>
+        <h2 id="nihiramusic-title">nihiramusic.in</h2>
+        <p class="detail-status"><span class="status status-live">Live</span><span>Own domain, HTTPS, updated regularly.</span></p>
+        <p class="detail-summary">A website for my wife Nihira’s music: her original compositions, playback work, cover songs, concerts, news and awards, in one place.</p>
+        <dl class="project-facts"><div><dt>Why</dt><dd>Nihira needed a better home for her music online. I also wanted a real project, with a result I cared about, to practise directing AI rather than just coding with it.</dd></div><div><dt>How</dt><dd>I took the role of project manager, with Claude as my development partner: clear goals, small steps, honest review of every change. The site itself is deliberately simple — static HTML, with all content in JSON data files that can be edited through forms instead of code.</dd></div><div><dt>Automation</dt><dd>Python scripts run on a schedule in GitHub Actions: new YouTube videos are picked up daily, concerts are synced from a calendar every few hours and move into past events once they are over, and every content change is validated before it is deployed.</dd></div><div><dt>What I learned</dt><dd>Directing AI is a different skill from coding with it. Most websites fail at maintenance, not at launch, so design for month six. And whoever ships it stays accountable for it — the essay goes into more detail.</dd></div></dl>
+        <ul class="detail-meta" aria-label="Technologies"><li>Static HTML</li><li>JSON content</li><li>Python</li><li>GitHub Actions</li><li>GitHub Pages</li></ul>
+        <div class="detail-links"><a href="https://nihiramusic.in/" target="_blank" rel="noopener noreferrer">Visit nihiramusic.in <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://get2abhijit.substack.com/p/i-built-my-wife-a-website-in-4-days" target="_blank" rel="noopener noreferrer">Read the story on Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+      <div class="detail-symbol symbol-music" aria-hidden="true">♪</div>
+    </article>
+    <article class="project-detail" id="cricketiq" aria-labelledby="cricketiq-title">
+      <div class="detail-content">
+        <p class="eyebrow">CRICKET · DATA · PYTHON</p>
+        <h2 id="cricketiq-title">CricketIQ</h2>
+        <p class="detail-status"><span class="status status-live">Live</span><span>Public web application.</span></p>
+        <p class="detail-summary">A cricket analytics application built on ball-by-ball data, for exploring matches, players and performance.</p>
+        <dl class="project-facts"><div><dt>Why</dt><dd>As a coach and performance analyst, I spend a lot of time with cricket data. CricketIQ is where that work meets software: an attempt to make match and player analysis quicker and more accessible.</dd></div><div><dt>How</dt><dd>Python for the data processing and analysis, with a Streamlit web interface so the results can be explored without writing code.</dd></div><div><dt>Where it stands</dt><dd>Live and in active development. Current work focuses on richer player-level data and on making the analysis accessible to AI tools.</dd></div></dl>
+        <ul class="detail-meta" aria-label="Technologies"><li>Python</li><li>Streamlit</li><li>Ball-by-ball data</li></ul>
+        <div class="detail-links"><a href="https://criciq-cricanalysisde.streamlit.app/" target="_blank" rel="noopener noreferrer">Open application <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+      <div class="detail-symbol symbol-cricket" aria-hidden="true">C<span>IQ</span></div>
+    </article>
+    <article class="project-detail" id="visaflow" aria-labelledby="visaflow-title">
+      <div class="detail-content">
+        <p class="eyebrow">WORKFLOW AUTOMATION · DOCUMENTS</p>
+        <h2 id="visaflow-title">VisaFlow</h2>
+        <p class="detail-status"><span class="status status-draft">Prototype</span><span>Basic working version, not public.</span></p>
+        <p class="detail-summary">A prototype for preparing visa applications from documents instead of retyping the same details by hand.</p>
+        <dl class="project-facts"><div><dt>Why</dt><dd>Visa applications ask for the same personal details again and again, copied from passports and other documents. That is slow and easy to get wrong.</dd></div><div><dt>How</dt><dd>The prototype reads a passport and extracts its main fields into structured data.</dd></div><div><dt>Where it stands</dt><dd>Passport reading and field extraction work. The longer-term idea is a predictable, repeatable workflow from documents to a finished application.</dd></div></dl>
+        <ul class="detail-meta" aria-label="Technologies"><li>OCR</li><li>Document extraction</li></ul>
+      </div>
+      <div class="detail-symbol symbol-flow" aria-hidden="true">◎</div>
+    </article>
+    <article class="project-detail" id="famdeck" aria-labelledby="famdeck-title">
+      <div class="detail-content">
+        <p class="eyebrow">PRODUCT EXPERIMENT · WEB</p>
+        <h2 id="famdeck-title">FamDeck</h2>
+        <p class="detail-status"><span class="status status-draft">In progress</span><span>Private for now.</span></p>
+        <p class="detail-summary">A family dashboard: one shared place for the documents, travel plans, calendars and links a household needs.</p>
+        <dl class="project-facts"><div><dt>Why</dt><dd>Family information tends to be spread across drives, calendars and folders. FamDeck brings it together in one place, for the whole family.</dd></div><div><dt>How</dt><dd>A React and TypeScript application built with Vite and Tailwind CSS. Navigation, sections and links are defined in JSON configuration files with validation, so adding content does not mean changing code. It is installable as a web app and deployed automatically through GitHub Actions.</dd></div><div><dt>Where it stands</dt><dd>The application shell and quick access to shared documents are in place; the remaining sections, from calendar to finance, are still to be built.</dd></div></dl>
+        <ul class="detail-meta" aria-label="Technologies"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li><li>PWA</li></ul>
+      </div>
+      <div class="detail-symbol symbol-family" aria-hidden="true">⌂</div>
+    </article>
+    <article class="project-detail" id="cad" aria-labelledby="cad-title">
+      <div class="detail-content">
+        <p class="eyebrow">SOFTWARE ENGINEERING · CAD</p>
+        <h2 id="cad-title">Notes on engineering software</h2>
+        <p class="detail-status"><span class="status status-draft">Writing topic</span><span>Shared through Field notes.</span></p>
+        <p class="detail-summary">Writing about what long-lived engineering software teaches: geometry, C++, desktop applications and modernising code without rewriting everything.</p>
+        <dl class="project-facts"><div><dt>Scope</dt><dd>Transferable engineering ideas from my day job writing CAD software — never proprietary code, customer information or internal details.</dd></div></dl>
+        <ul class="detail-meta" aria-label="Technologies"><li>C++</li><li>Geometry</li><li>Software architecture</li></ul>
+      </div>
+      <div class="detail-symbol symbol-cad" aria-hidden="true">⌘</div>
+    </article>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
+    <span>Independent by design. Built one experiment at a time.</span>
+    <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+    <small>© <span data-year>2026</span> Abhijit Deshpande</small>
+  </footer>
+  <script src="assets/site.js"></script>
+</body>
+</html>
