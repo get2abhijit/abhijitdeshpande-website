@@ -16,6 +16,7 @@ about.html        Background, links and contact
 assets/site.css   Shared design system and responsive styles
 assets/site.js    Mobile menu and footer year
 assets/fonts/     Self-hosted fonts + their SIL Open Font Licences
+assets/images/    Photos (resized, metadata removed)
 assets/favicon.svg, assets/apple-touch-icon.png
 .nojekyll         Tells GitHub Pages to serve files as they are
 ```
@@ -35,10 +36,10 @@ Note: Python's server does not use `404.html` for missing pages; open http://loc
 
 ## Publish with GitHub Pages
 
-1. Create a public repository named `abhijitdeshpande-site`.
+1. Create a public repository named `abhijitdeshpande-website`.
 2. Upload the *contents* of this folder (not the folder itself), including `.nojekyll`.
 3. **Settings → Pages → Build and deployment → Deploy from a branch**, select `main` and `/ (root)`, Save.
-4. After a minute or two the site is at `https://get2abhijit.github.io/abhijitdeshpande-site/`.
+4. After a minute or two the site is at `https://get2abhijit.github.io/abhijitdeshpande-website/`.
 
 All links are relative, so the same files also work on a custom domain later.
 
@@ -64,3 +65,7 @@ Each project in `projects.html` has the same parts: status label, one-sentence s
 
 - `status-live` — public and working
 - `status-draft` with the text Prototype, In progress or Writing topic
+
+## Photos
+
+Photos live in `assets/images/` as JPEGs about 500–900 px wide. To swap one, keep the same file name (or update the `src`, `width` and `height` in `about.html`). Before adding a new photo, resize it and remove location metadata — exporting a copy from most photo apps does both.
