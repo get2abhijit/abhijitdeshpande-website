@@ -583,3 +583,11 @@ mark { background: #f3e3d9; color: var(--ink); padding: 0 3px; }
 /* Note rows on the Field notes page use h2 for correct heading order */
 .note-row h2 { font-size: 17px; font-weight: 500; margin: 0 0 5px; }
 .note-row h2 a:hover { color: var(--accent-ink); }
+
+/* ---------- Household Finance Tracker page ---------- */
+.note-header .detail-status { margin: 0 0 22px; }
+.note-cta { display: flex; flex-wrap: wrap; align-items: center; gap: 18px 28px; margin: 0 0 8px; }
+.note-cta-end { margin-top: 36px; }
+.photo-dashboard { max-width: 560px; margin: 28px 0 40px; }
+.photo-dashboard img { border: 1px solid var(--line); }
+.symbol-finance { font-size: 65px; }

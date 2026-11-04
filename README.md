@@ -9,6 +9,8 @@ Live at: https://get2abhijit.github.io/abhijitdeshpande-website/
 ```
 index.html            Home
 projects.html         Projects, each with status, why/how/where it stands
+household-finance-tracker.html
+                      Project page for the Household Finance Tracker (linked from projects.html)
 notes.html            Field notes index (newest first)
 notes/*.html          One page per note
 notes/_template.html  Copy this to start a new note (unlisted, noindex)
@@ -22,6 +24,7 @@ sitemap.xml           List of public pages for search engines
 robots.txt            Points crawlers to the sitemap
 assets/site.css       Shared design system and responsive styles
 assets/site.js        Mobile menu and footer year
+preview.py            Local preview that also shows draft notes (not needed on the public site)
 assets/fonts/         Self-hosted fonts + SIL Open Font Licences
 assets/images/        Photos (resized, metadata removed)
 .nojekyll             Tells GitHub Pages to serve files as they are
@@ -35,7 +38,15 @@ Header, navigation and footer are repeated in every page. If you change one, cha
 python -m http.server 8001
 ```
 
-Open http://localhost:8001 and stop with `Ctrl + C`. Python's server doesn't use `404.html` automatically; open `/404.html` directly to check it.
+Open http://localhost:8001 and stop with `Ctrl + C`.
+
+### Preview with drafts
+
+```bash
+python preview.py
+```
+
+Same idea, but drafts (any page in `notes/` with `<meta name="robots" content="noindex">`, such as the two travel pages) are added to the Field notes list and to "Recent writing" on the home page, and a small "Local preview" label appears in the corner. Nothing on disk changes, so the public site still hides them. It tries the next port if 8001 is busy and prints the address. `preview.py` is only for your computer; you don't need to upload it. To keep a draft off the public site entirely, don't upload its file. Python's server doesn't use `404.html` automatically; open `/404.html` directly to check it.
 
 ## Publish an update
 
