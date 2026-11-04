@@ -1,71 +1,86 @@
 # Abhijit Deshpande — personal site
 
-A personal technology lab and independent engineering journal. Plain HTML, CSS and vanilla JavaScript: no build step, package manager, backend, tracking or third-party requests.
+A personal technology lab and journal. Plain HTML, CSS and vanilla JavaScript: no build step, package manager, backend, cookies, tracking or third-party requests.
+
+Live at: https://get2abhijit.github.io/abhijitdeshpande-website/
 
 ## Structure
 
 ```
-index.html        Home — introduction, selected projects, recent notes
-projects.html     Projects and experiments, with status
-notes.html        Field notes index (newest first)
-notes/*.html      One page per note
-notes/_template.html  Copy this to start a new note (not linked, not indexed)
-now.html          Current focus (update the date when you edit it)
-about.html        Background, links and contact
-404.html          Shown by GitHub Pages for unknown addresses
-assets/site.css   Shared design system and responsive styles
-assets/site.js    Mobile menu and footer year
-assets/fonts/     Self-hosted fonts + their SIL Open Font Licences
-assets/images/    Photos (resized, metadata removed)
-assets/favicon.svg, assets/apple-touch-icon.png
-.nojekyll         Tells GitHub Pages to serve files as they are
+index.html            Home
+projects.html         Projects, each with status, why/how/where it stands
+notes.html            Field notes index (newest first)
+notes/*.html          One page per note
+notes/_template.html  Copy this to start a new note (unlisted, noindex)
+notes/norway-denmark-2026.html, notes/statue-of-unity.html
+                      Travel drafts (unlisted, noindex) — see "Publishing a draft"
+now.html              Current focus — update the date when you edit it
+about.html            Bio, photos, links, contact
+404.html              Shown by GitHub Pages for unknown addresses
+feed.xml              RSS feed of field notes
+sitemap.xml           List of public pages for search engines
+robots.txt            Points crawlers to the sitemap
+assets/site.css       Shared design system and responsive styles
+assets/site.js        Mobile menu and footer year
+assets/fonts/         Self-hosted fonts + SIL Open Font Licences
+assets/images/        Photos (resized, metadata removed)
+.nojekyll             Tells GitHub Pages to serve files as they are
 ```
 
 Header, navigation and footer are repeated in every page. If you change one, change every page the same way. Pages inside `notes/` use `../` in front of every link and asset path.
 
 ## Preview locally
 
-From this folder:
-
 ```bash
 python -m http.server 8001
 ```
 
-Then open http://localhost:8001. Stop the server with `Ctrl + C`.
-Note: Python's server does not use `404.html` for missing pages; open http://localhost:8001/404.html directly to check it.
+Open http://localhost:8001 and stop with `Ctrl + C`. Python's server doesn't use `404.html` automatically; open `/404.html` directly to check it.
 
-## Publish with GitHub Pages
+## Publish an update
 
-1. Create a public repository named `abhijitdeshpande-website`.
-2. Upload the *contents* of this folder (not the folder itself), including `.nojekyll`.
-3. **Settings → Pages → Build and deployment → Deploy from a branch**, select `main` and `/ (root)`, Save.
-4. After a minute or two the site is at `https://get2abhijit.github.io/abhijitdeshpande-website/`.
-
-All links are relative, so the same files also work on a custom domain later.
-
-## Fonts and privacy
-
-DM Sans, DM Mono and Playfair Display are served from `assets/fonts/` (subset to Latin, WOFF2). The site makes no requests to Google or any other third party, which avoids the GDPR issue with remotely loaded Google Fonts. System fonts are used as fallbacks.
-
-## Updating the Now page
-
-Edit the four items in `now.html` and change the `LAST UPDATED` line, including the `datetime` attribute (e.g. `2027-02`).
+Upload the changed files to the `main` branch of `get2abhijit/abhijitdeshpande-website` (or `git push`). GitHub Pages redeploys within a minute or two; the run is visible under the repository's **Actions** tab as "pages build and deployment".
 
 ## Adding a field note
 
-1. Copy `notes/_template.html` to `notes/<short-name>.html` and follow the comment at the top of the file.
-2. Add a row for it at the top of the list in `notes.html` (copy an existing `<li class="note-row">`).
-3. Optionally add the same row to "Recent writing" on `index.html`, which shows the three newest entries.
+1. Copy `notes/_template.html` to `notes/<short-name>.html` and follow the comment at the top.
+2. Add a row at the top of the list in `notes.html` (copy an existing `<li class="note-row">`).
+3. Add the same row to "Recent writing" on `index.html` (it shows the three newest).
+4. Add an `<item>` at the top of `feed.xml` and a `<url>` line to `sitemap.xml`.
 
-Essays published on Substack can be listed the same way, linking to the Substack URL instead of a local page.
+Substack essays are listed the same way, linking to the Substack URL instead of a local page (no sitemap entry needed).
+
+## Publishing a travel draft
+
+The two travel pages are layouts waiting for words and photos. They are not linked anywhere and carry `<meta name="robots" content="noindex">`.
+
+1. Put photos in `assets/images/` (resized to about 1200 px wide, location data removed — exporting a copy from your photo app usually does both).
+2. Replace each dashed box with a photo:
+   `<figure class="photo"><img src="../assets/images/bergen-harbour.jpg" width="1200" height="900" alt="Describe the photo" loading="lazy"><figcaption>Caption</figcaption></figure>`
+3. Replace highlighted text (`<mark>…</mark>`) and the italic prompts (`<p class="todo">…</p>`) with real text.
+4. Delete the `<p class="draft-banner">…</p>` line and the robots `noindex` line.
+5. Add the canonical/og:url lines (copy from another note and change the file name), then list it as in "Adding a field note".
 
 ## Updating a project
 
-Each project in `projects.html` has the same parts: status label, one-sentence summary, a short list of facts (Why / How / Where it stands …), technologies and links. Status labels:
-
-- `status-live` — public and working
-- `status-draft` with the text Prototype, In progress or Writing topic
+Each project in `projects.html` has: status label, one-sentence summary, a list of facts (Why / How / Where it stands …), technologies and links. Status labels: `status-live` (public and working) or `status-draft` with the text Prototype, In progress or Writing topic.
 
 ## Photos
 
-Photos live in `assets/images/` as JPEGs about 500–900 px wide. To swap one, keep the same file name (or update the `src`, `width` and `height` in `about.html`). Before adding a new photo, resize it and remove location metadata — exporting a copy from most photo apps does both.
+To swap a photo, keep the file name or update `src`, `width` and `height`. Remove location metadata before adding new photos.
+
+## Fonts and privacy
+
+DM Sans, DM Mono and Playfair Display are served from `assets/fonts/` (Latin subset, WOFF2). No requests go to Google or any other third party.
+
+## When the custom domain is bought (abhijitdeshpande.in)
+
+1. Search and replace `https://get2abhijit.github.io/abhijitdeshpande-website/` with `https://abhijitdeshpande.in/` in every `.html` file, `feed.xml`, `sitemap.xml`, `robots.txt` and this README.
+2. In the repository: **Settings → Pages → Custom domain**, enter `abhijitdeshpande.in` and save (GitHub adds a `CNAME` file).
+3. At the registrar's DNS settings, add:
+   - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` record for `www` → `get2abhijit.github.io`
+4. Wait for the DNS check to pass, then tick **Enforce HTTPS**.
+5. Optional: set up an email address on the domain and add it to `about.html`.
+
+`robots.txt` only takes effect at the root of a domain, so it starts working once the custom domain is live. Until then, the sitemap can be submitted directly in Google Search Console.

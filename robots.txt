@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://get2abhijit.github.io/abhijitdeshpande-website/sitemap.xml

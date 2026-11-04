@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abhijit Deshpande — Field notes</title>
+    <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes.html</link>
+    <atom:link href="https://get2abhijit.github.io/abhijitdeshpande-website/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Notes on family, cricket, engineering and building things.</description>
+    <language>en-gb</language>
+    <item>
+      <title>Husband and dad, before everything</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/family-first.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/family-first.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>This site lists projects, roles and experiments. The most important roles in my life don’t have a project page.</description>
+    </item>
+    <item>
+      <title>From the crease to the analyst’s laptop</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/cricket-analyst.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/cricket-analyst.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Player, coach, club organiser and performance analyst: four ways of looking at the same game.</description>
+    </item>
+    <item>
+      <title>A career built on curves</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/built-on-curves.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/built-on-curves.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>From a master’s degree in computational geometry to writing CAD software, and why geometry has stayed at the centre.</description>
+    </item>
+    <item>
+      <title>Small steps you can review</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/small-steps.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/small-steps.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Why I split anything substantial into work packages small enough to check in one sitting — and why that matters even more when working with AI.</description>
+    </item>
+    <item>
+      <title>Self-hosting web fonts on a static site</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/self-hosted-fonts.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/self-hosted-fonts.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Removing the last third-party request from this site: why it matters in Germany, and the three steps it takes.</description>
+    </item>
+    <item>
+      <title>The case for boring, reliable technology</title>
+      <link>https://get2abhijit.github.io/abhijitdeshpande-website/notes/boring-technology.html</link>
+      <guid>https://get2abhijit.github.io/abhijitdeshpande-website/notes/boring-technology.html</guid>
+      <pubDate>Tue, 03 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Both of my live sites run on almost nothing. What that buys, and when I do add moving parts.</description>
+    </item>
+    <item>
+      <title>I built my wife a website in 4 days. Here’s why</title>
+      <link>https://get2abhijit.substack.com/p/i-built-my-wife-a-website-in-4-days</link>
+      <guid>https://get2abhijit.substack.com/p/i-built-my-wife-a-website-in-4-days</guid>
+      <pubDate>Sun, 01 Nov 2026 09:00:00 +0000</pubDate>
+      <description>Learning to direct AI rather than just use it — and designing a site for month six, not launch day.</description>
+    </item>
+  </channel>
+</rss>
