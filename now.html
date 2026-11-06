@@ -6,8 +6,9 @@
   <title>Now — Abhijit Deshpande</title>
   <meta name="description" content="What Abhijit Deshpande is focused on right now: family, cricket, building with AI and writing.">
   <meta name="author" content="Abhijit Deshpande">
-  <meta name="theme-color" content="#f5f4ef">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Abhijit Deshpande">
   <meta property="og:title" content="Now — Abhijit Deshpande">
@@ -18,39 +19,72 @@
   <meta property="og:image" content="https://get2abhijit.github.io/abhijitdeshpande-website/assets/images/abhijit.jpg">
   <link rel="alternate" type="application/rss+xml" title="Abhijit Deshpande — Field notes" href="feed.xml">
   <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body data-root="" data-page="now.html">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main"><a href="projects.html">Projects</a><a href="notes.html">Field notes</a><a href="now.html" aria-current="page">Now</a><a href="about.html">About</a></nav>
-  </header>
-  <main id="main" class="page-main narrow" tabindex="-1">
-    <p class="eyebrow">A SNAPSHOT</p>
-    <h1 class="page-title">What I'm doing now<span aria-hidden="true">.</span></h1>
-    <p class="page-intro">A lightweight snapshot of what currently has my attention. Updated occasionally, not obsessively.</p>
-    <p class="updated">LAST UPDATED: <time datetime="2026-11">NOVEMBER 2026</time></p>
-
-    <div class="now-item"><span class="now-index" aria-hidden="true">01</span><div><h2>Family</h2><p>Husband and dad first — everything else on this page fits around that.</p></div></div>
-    <div class="now-item"><span class="now-index" aria-hidden="true">02</span><div><h2>Building with AI</h2><p>Practising how to direct AI rather than just code with it: this website, and continued improvements to <a class="inline-link" href="projects.html#nihiramusic">nihiramusic.in</a>.</p></div></div>
-    <div class="now-item"><span class="now-index" aria-hidden="true">03</span><div><h2>Cricket</h2><p>Coaching and analysis, and improving player-level data in <a class="inline-link" href="projects.html#cricketiq">CricketIQ</a>.</p></div></div>
-    <div class="now-item"><span class="now-index" aria-hidden="true">04</span><div><h2>Small useful automations</h2><p>I like automations that stay quiet until something matters. I've been dabbling with ideas such as price monitoring along those lines — still ideas rather than running tools.</p></div></div>
-    <div class="now-item"><span class="now-index" aria-hidden="true">05</span><div><h2>Writing</h2><p>Turning projects and experiences into <a class="inline-link" href="notes.html">field notes</a> here and longer essays on Substack.</p></div></div>
-
-    <p class="small-note">Inspired by the <a href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">/now page<span class="visually-hidden"> (opens in a new tab)</span></a> idea.</p>
-  </main>
-  <footer class="site-footer">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <span>Independent by design. Built one experiment at a time.</span>
-    <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
-    <small>© <span data-year>2026</span> Abhijit Deshpande</small>
-  </footer>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Site">
+      <div class="side-top">
+        <a class="side-id" href="index.html"><img src="assets/images/abhijit-avatar.jpg" width="56" height="56" alt=""><span><strong>Abhijit Deshpande</strong><span>Husband, dad, cricketer, engineer</span></span></a>
+        <button class="side-close" type="button" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="sidenav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects<span class="count" data-count="projects"></span></a></li>
+        <li><a href="notes.html">Notes<span class="count" data-count="notes"></span></a></li>
+        <li><a href="now.html" aria-current="page">Now</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="side-foot">
+        <a class="side-mark-link" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="36" height="36" alt=""></a>
+        <div class="side-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <div class="col">
+      <header class="topbar">
+        <div class="wrap">
+          <a class="brand" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>Abhijit Deshpande</span></a>
+          <span class="where">Now</span>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+        </div>
+      </header>
+      <div class="crumbbar"><div class="wrap"><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li><span aria-current="page">Now</span></li></ol></nav></div></div>
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+          <div class="view">
+            <h1 class="page-h1">What I'm doing now</h1>
+            <p class="intro">A lightweight snapshot of what currently has my attention. Updated occasionally, not obsessively.</p>
+            <p class="updated">Last updated: <time datetime="2026-11">November 2026</time></p>
+            <ul class="now-list">
+              <li><span class="now-index" aria-hidden="true">01</span><div><h2>Family</h2><p>Husband and dad first — everything else on this page fits around that.</p></div></li>
+              <li><span class="now-index" aria-hidden="true">02</span><div><h2>Building with AI</h2><p>Practising how to direct AI rather than just code with it: this website, and continued improvements to <a class="inline-link" href="projects/nihiramusic.html">nihiramusic.in</a>.</p></div></li>
+              <li><span class="now-index" aria-hidden="true">03</span><div><h2>Cricket</h2><p>Coaching and analysis, and improving player-level data in <a class="inline-link" href="projects/cricketiq.html">CricketIQ</a>.</p></div></li>
+              <li><span class="now-index" aria-hidden="true">04</span><div><h2>Small useful automations</h2><p>I like automations that stay quiet until something matters. I've been dabbling with ideas such as price monitoring along those lines — still ideas rather than running tools.</p></div></li>
+              <li><span class="now-index" aria-hidden="true">05</span><div><h2>Writing</h2><p>Turning projects and experiences into <a class="inline-link" href="notes.html">field notes</a> here and longer essays on Substack.</p></div></li>
+            </ul>
+            <p class="small-note" style="margin-top:28px">Inspired by the <a class="inline-link" href="https://nownownow.com/about" target="_blank" rel="noopener noreferrer">/now page<span class="visually-hidden"> (opens in a new tab)</span></a> idea.</p>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <span>© <span data-year>2026</span> Abhijit Deshpande</span>
+          <span>Independent by design. Built one experiment at a time.</span>
+          <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/site-map.js"></script>
   <script src="assets/site.js"></script>
 </body>
 </html>

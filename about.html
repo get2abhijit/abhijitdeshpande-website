@@ -6,8 +6,9 @@
   <title>About — Abhijit Deshpande</title>
   <meta name="description" content="About Abhijit Deshpande: husband and dad, cricketer, coach and performance analyst, and software engineer in Germany.">
   <meta name="author" content="Abhijit Deshpande">
-  <meta name="theme-color" content="#f5f4ef">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Abhijit Deshpande">
   <meta property="og:title" content="About — Abhijit Deshpande">
@@ -18,68 +19,96 @@
   <meta property="og:image" content="https://get2abhijit.github.io/abhijitdeshpande-website/assets/images/abhijit.jpg">
   <link rel="alternate" type="application/rss+xml" title="Abhijit Deshpande — Field notes" href="feed.xml">
   <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body data-root="" data-page="about.html">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main"><a href="projects.html">Projects</a><a href="notes.html">Field notes</a><a href="now.html">Now</a><a href="about.html" aria-current="page">About</a></nav>
-  </header>
-  <main id="main" class="page-main about-page" tabindex="-1">
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Site">
+      <div class="side-top">
+        <a class="side-id" href="index.html"><img src="assets/images/abhijit-avatar.jpg" width="56" height="56" alt=""><span><strong>Abhijit Deshpande</strong><span>Husband, dad, cricketer, engineer</span></span></a>
+        <button class="side-close" type="button" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="sidenav" aria-label="Main">
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects<span class="count" data-count="projects"></span></a></li>
+        <li><a href="notes.html">Notes<span class="count" data-count="notes"></span></a></li>
+        <li><a href="now.html">Now</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+      <div class="side-foot">
+        <a class="side-mark-link" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="36" height="36" alt=""></a>
+        <div class="side-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <div class="col">
+      <header class="topbar">
+        <div class="wrap">
+          <a class="brand" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>Abhijit Deshpande</span></a>
+          <span class="where">About</span>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+        </div>
+      </header>
+      <div class="crumbbar"><div class="wrap"><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li><span aria-current="page">About</span></li></ol></nav></div></div>
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+          <div class="view">
     <div class="about-intro">
       <div class="about-intro-text">
-        <p class="eyebrow">THE PERSON BEHIND THE PROJECTS</p>
-        <h1 class="page-title">A little about me<span aria-hidden="true">.</span></h1>
+        <p class="cap">The person behind the projects</p>
+        <h1 class="page-h1">A little about me</h1>
         <p class="lead">Husband and dad first. Then cricketer, coach and performance analyst — and a software engineer who likes turning ideas into working things.</p>
         <p>I'm Abhijit Deshpande and I live in Germany. I tend to learn by building: a question or a recurring annoyance often becomes a small tool, a prototype or an experiment. This page is about the person behind them.</p>
       </div>
-      <figure class="photo photo-profile"><img src="assets/images/abhijit.jpg" width="720" height="737" alt="Abhijit in sunglasses and a yellow T-shirt, arms folded, standing on a wooden bridge in a forest." decoding="async"></figure>
+      <figure class="photo photo-profile"><img src="assets/images/abhijit.jpg" alt="Abhijit in sunglasses and a yellow T-shirt, arms folded, standing on a wooden bridge in a forest." decoding="async" width="720" height="737"></figure>
     </div>
 
     <section class="about-section" aria-labelledby="family-heading">
       <div class="about-text">
-        <p class="eyebrow">FAMILY</p>
+        <p class="cap">Family</p>
         <h2 id="family-heading">Husband and dad, before everything</h2>
-        <p>Everything else on this site comes after my family. My wife Nihira is a singer and composer; her music is the reason <a class="inline-link" href="projects.html#nihiramusic">nihiramusic.in</a> exists, and building it is one of the things I'm proudest of. Together we are raising our daughter, and my side projects fit around family life rather than the other way round.</p>
+        <p>Everything else on this site comes after my family. My wife Nihira is a singer and composer; her music is the reason <a class="inline-link" href="projects/nihiramusic.html">nihiramusic.in</a> exists, and building it is one of the things I'm proudest of. Together we are raising our daughter, and my side projects fit around family life rather than the other way round.</p>
         <p><a class="text-link" href="notes/family-first.html">Why the order matters <span aria-hidden="true">→</span></a></p>
       </div>
       <div class="photo-pair">
-        <figure class="photo"><img src="assets/images/family.jpg" width="900" height="978" alt="Abhijit, Nihira and their daughter smiling on a waterfront pier, with a city skyline across the water behind them." decoding="async" loading="lazy"><figcaption>The three of us.</figcaption></figure>
-        <figure class="photo"><img src="assets/images/with-nihira.jpg" width="800" height="934" alt="Abhijit with his arms around Nihira on a riverside railing, with a historic bridge and castle in the background." decoding="async" loading="lazy"><figcaption>With Nihira.</figcaption></figure>
+        <figure class="photo"><img src="assets/images/family.jpg" alt="Abhijit, Nihira and their daughter smiling on a waterfront pier, with a city skyline across the water behind them." decoding="async" loading="lazy" width="900" height="978"><figcaption>The three of us.</figcaption></figure>
+        <figure class="photo"><img src="assets/images/with-nihira.jpg" alt="Abhijit with his arms around Nihira on a riverside railing, with a historic bridge and castle in the background." decoding="async" loading="lazy" width="800" height="934"><figcaption>With Nihira.</figcaption></figure>
       </div>
     </section>
 
     <section class="about-section about-section--reverse" aria-labelledby="cricket-heading">
       <div class="about-text">
-        <p class="eyebrow">CRICKET</p>
+        <p class="cap">Cricket</p>
         <h2 id="cricket-heading">Player, coach, analyst</h2>
         <p>Cricket is the other constant. I'm an ICC-certified Level 1 coach and an amateur performance analyst, and I have worked as an analyst with the German and the Luxembourg national teams.</p>
-        <p>Closer to home, I set up a local club and ran it as it climbed to Bundesliga level, and I have served on the board and committees of my regional cricket association. <a class="inline-link" href="projects.html#cricketiq">CricketIQ</a> is where cricket and software meet.</p>
+        <p>Closer to home, I set up a local club and ran it as it climbed to Bundesliga level, and I have served on the board and committees of my regional cricket association. <a class="inline-link" href="projects/cricketiq.html">CricketIQ</a> is where cricket and software meet.</p>
         <p><a class="text-link" href="notes/cricket-analyst.html">From the crease to the analyst's laptop <span aria-hidden="true">→</span></a></p>
       </div>
-      <figure class="photo photo-single"><img src="assets/images/cricket-batting.jpg" width="530" height="671" alt="Abhijit in a helmet, pads and gloves, taking a batting stance during practice." decoding="async" loading="lazy"><figcaption>At the crease.</figcaption></figure>
+      <div class="photo-pair"><figure class="photo"><img src="assets/images/cricket-batting.jpg" alt="Abhijit in a helmet, pads and gloves, taking a batting stance during practice." decoding="async" loading="lazy" width="530" height="671"><figcaption>At the crease.</figcaption></figure><figure class="photo"><img src="assets/images/cricket-titans.jpg" alt="Abhijit in a white Titans shirt, pads and gloves, leaning on a bat with his helmet in his hand, on a grass field." decoding="async" loading="lazy" width="680" height="1024"><figcaption>Padded up.</figcaption></figure></div>
     </section>
 
     <section class="about-section" aria-labelledby="engineering-heading">
       <div class="about-text">
-        <p class="eyebrow">ENGINEERING</p>
+        <p class="cap">Engineering</p>
         <h2 id="engineering-heading">A career built on curves</h2>
         <p>I hold a master's degree in mechanical engineering from the University of Wisconsin–Madison (2010), with a focus on computational geometry. Geometry has stayed at the centre of my work: I write CAD software for a living.</p>
         <p>Outside work I build with Python, the web and AI-assisted development. My professional history is on <a class="inline-link" href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>; this site is about what I make and learn in my own time.</p>
         <p><a class="text-link" href="notes/built-on-curves.html">Why geometry stuck <span aria-hidden="true">→</span></a></p>
       </div>
-      <figure class="photo photo-single"><img src="assets/images/graduation.jpg" width="532" height="721" alt="Abhijit in graduation gown and cap, holding a University of Wisconsin–Madison diploma cover in a large arena." decoding="async" loading="lazy"><figcaption>Graduation day, University of Wisconsin–Madison.</figcaption></figure>
+      <figure class="photo photo-single"><img src="assets/images/graduation.jpg" alt="Abhijit in graduation gown and cap, holding a University of Wisconsin–Madison diploma cover in a large arena." decoding="async" loading="lazy" width="532" height="721"><figcaption>Graduation day, University of Wisconsin–Madison.</figcaption></figure>
     </section>
 
     <section class="about-section about-section--text" aria-labelledby="beyond-heading">
       <div class="about-text">
-        <p class="eyebrow">AWAY FROM THE SCREEN</p>
+        <p class="cap">Away from the screen</p>
         <h2 id="beyond-heading">Running, music and writing</h2>
         <p>I run, music is never far away in our house, and I write — short notes here, longer essays on Substack. I speak English, Marathi, Hindi and German.</p>
         <h3 class="subheading">Areas I keep coming back to</h3>
@@ -94,13 +123,20 @@
       <p>The best way to reach me is a message on <a class="inline-link" href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
       <p class="small-note">This is an independent personal site. Views and experiments here are my own and do not represent my employer.</p>
     </section>
-  </main>
-  <footer class="site-footer">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <span>Independent by design. Built one experiment at a time.</span>
-    <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
-    <small>© <span data-year>2026</span> Abhijit Deshpande</small>
-  </footer>
+  
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <span>© <span data-year>2026</span> Abhijit Deshpande</span>
+          <span>Independent by design. Built one experiment at a time.</span>
+          <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/site-map.js"></script>
   <script src="assets/site.js"></script>
 </body>
 </html>

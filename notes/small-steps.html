@@ -6,8 +6,9 @@
   <title>Small steps you can review — Abhijit Deshpande</title>
   <meta name="description" content="Why I split anything substantial into work packages small enough to check in one sitting — and why that matters even more when working with AI.">
   <meta name="author" content="Abhijit Deshpande">
-  <meta name="theme-color" content="#f5f4ef">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="article">
   <meta property="og:site_name" content="Abhijit Deshpande">
   <meta property="og:title" content="Small steps you can review — Abhijit Deshpande">
@@ -18,27 +19,58 @@
   <meta property="og:image" content="https://get2abhijit.github.io/abhijitdeshpande-website/assets/images/abhijit.jpg">
   <link rel="alternate" type="application/rss+xml" title="Abhijit Deshpande — Field notes" href="../feed.xml">
   <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="preload" href="../assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/site.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body data-root="../" data-page="notes/small-steps.html">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="../index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main"><a href="../projects.html">Projects</a><a href="../notes.html" aria-current="page">Field notes</a><a href="../now.html">Now</a><a href="../about.html">About</a></nav>
-  </header>
-  <main id="main" class="page-main note-page" tabindex="-1">
-    <article>
-      <header class="note-header">
-        <p class="eyebrow"><a href="../notes.html">FIELD NOTES</a> <span aria-hidden="true">/</span> PROCESS <span aria-hidden="true">·</span> <time datetime="2026-11-03">3 NOV 2026</time></p>
-        <h1 class="note-title">Small steps you can review</h1>
-        <p class="lead">I split anything substantial into work packages small enough to review in one sitting. Each one ends with something I can open, test and judge before deciding what comes next.</p>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Site">
+      <div class="side-top">
+        <a class="side-id" href="../index.html"><img src="../assets/images/abhijit-avatar.jpg" width="56" height="56" alt=""><span><strong>Abhijit Deshpande</strong><span>Husband, dad, cricketer, engineer</span></span></a>
+        <button class="side-close" type="button" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="sidenav" aria-label="Main">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html">Projects<span class="count" data-count="projects"></span></a></li>
+        <li><a href="../notes.html" class="active-section" aria-current="true">Notes<span class="count" data-count="notes"></span></a>
+          <div data-subnav="notes"></div></li>
+        <li><a href="../now.html">Now</a></li>
+        <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="side-foot">
+        <a class="side-mark-link" href="../index.html" aria-label="Abhijit Deshpande, home"><img src="../assets/favicon.svg" width="36" height="36" alt=""></a>
+        <div class="side-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <div class="col">
+      <header class="topbar">
+        <div class="wrap">
+          <a class="brand" href="../index.html" aria-label="Abhijit Deshpande, home"><img src="../assets/favicon.svg" width="34" height="34" alt=""><span>Abhijit Deshpande</span></a>
+          <span class="where">Notes</span>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+        </div>
       </header>
-      <div class="prose">
+      <div class="crumbbar"><div class="wrap"><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../notes.html">Notes</a></li><li><a href="../notes.html#g-engineering">Engineering</a></li><li><span aria-current="page">Small steps you can review</span></li></ol></nav></div></div>
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+          <div class="view">
+            <a class="backlink" data-back href="../notes.html">← All notes</a>
+            <article>
+              <header class="article-head">
+                <p class="cap">Process · <time datetime="2026-11-03">3 Nov 2026</time></p>
+                <h1 class="page-h1">Small steps you can review</h1>
+                <p class="lead">I split anything substantial into work packages small enough to review in one sitting. Each one ends with something I can open, test and judge before deciding what comes next.</p>
+              </header>
+              <div data-toc-m></div>
+              <div class="prose">
         <p>This site is being built that way. Instead of one large rewrite, it has gone through a sequence of numbered packages: fixes and accessibility first, then self-hosted fonts, then the home page, then projects and notes. Each package ended with a complete, working copy of the site that I could preview locally before approving the next step.</p>
 
         <h2>Why it works</h2>
@@ -58,18 +90,21 @@
         </ul>
         <p>None of this is new. It is the same idea behind small pull requests and short iterations. Writing it down simply makes it easier to stick to when a project gets exciting and the temptation is to do everything at once.</p>
       </div>
-      <footer class="note-footer">
-        <a class="text-link" href="../notes.html"><span aria-hidden="true">←</span> All field notes</a>
-        <a class="text-link" href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Longer essays on Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+            </article>
+            <nav class="pager" aria-label="More notes" data-pager hidden></nav>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <span>© <span data-year>2026</span> Abhijit Deshpande</span>
+          <span>Independent by design. Built one experiment at a time.</span>
+          <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        </div>
       </footer>
-    </article>
-  </main>
-  <footer class="site-footer">
-    <a class="wordmark" href="../index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <span>Independent by design. Built one experiment at a time.</span>
-    <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
-    <small>© <span data-year>2026</span> Abhijit Deshpande</small>
-  </footer>
+    </div>
+  </div>
+  <script src="../assets/site-map.js"></script>
   <script src="../assets/site.js"></script>
 </body>
 </html>

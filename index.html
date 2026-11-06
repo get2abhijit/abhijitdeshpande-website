@@ -6,8 +6,9 @@
   <title>Abhijit Deshpande — Engineer, cricketer, builder</title>
   <meta name="description" content="Abhijit Deshpande: software engineer, cricketer, coach and performance analyst in Germany. Projects, experiments and notes on building things, on and off the screen.">
   <meta name="author" content="Abhijit Deshpande">
-  <meta name="theme-color" content="#f5f4ef">
-  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Abhijit Deshpande">
   <meta property="og:title" content="Abhijit Deshpande — Engineer, cricketer, builder">
@@ -18,45 +19,63 @@
   <meta property="og:image" content="https://get2abhijit.github.io/abhijitdeshpande-website/assets/images/abhijit.jpg">
   <link rel="alternate" type="application/rss+xml" title="Abhijit Deshpande — Field notes" href="feed.xml">
   <meta name="twitter:card" content="summary">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preload" href="assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/site.css">
   <script>document.documentElement.classList.add('js');</script>
 </head>
-<body>
+<body data-root="" data-page="index.html">
   <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false">Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main"><a href="projects.html">Projects</a><a href="notes.html">Field notes</a><a href="now.html">Now</a><a href="about.html">About</a></nav>
-  </header>
-  <main id="main" tabindex="-1">
-    <section class="hero">
-      <p class="eyebrow">ABHIJIT DESHPANDE <span aria-hidden="true">·</span> GERMANY</p>
-      <h1>Curiosity is the starting point.<br><em>Building is the outcome.</em></h1>
-      <p class="hero-copy">I'm Abhijit — a husband and a dad first, then a cricketer, coach and performance analyst, and a software engineer who writes CAD software for a living. This is where I keep the things I build, the ideas I'm exploring and what I learn along the way, on and off the screen.</p>
-      <div class="hero-actions">
-        <a class="button button-dark" href="projects.html">See what I've built <span aria-hidden="true">→</span></a>
-        <a class="text-link" href="about.html">More about me <span aria-hidden="true">→</span></a>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Site">
+      <div class="side-top">
+        <a class="side-id" href="index.html"><img src="assets/images/abhijit-avatar.jpg" width="56" height="56" alt=""><span><strong>Abhijit Deshpande</strong><span>Husband, dad, cricketer, engineer</span></span></a>
+        <button class="side-close" type="button" aria-label="Close menu">✕</button>
       </div>
-      <div class="hero-art" aria-hidden="true"><div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="art-core"></div><span class="art-label">IDEAS → SYSTEMS → THINGS</span></div>
-    </section>
+      <nav class="sidenav" aria-label="Main">
+        <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="projects.html">Projects<span class="count" data-count="projects"></span></a></li>
+        <li><a href="notes.html">Notes<span class="count" data-count="notes"></span></a></li>
+        <li><a href="now.html">Now</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="side-foot">
+        <a class="side-mark-link" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="36" height="36" alt=""></a>
+        <div class="side-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <div class="col">
+      <header class="topbar">
+        <div class="wrap">
+          <a class="brand" href="index.html" aria-label="Abhijit Deshpande, home"><img src="assets/favicon.svg" width="34" height="34" alt=""><span>Abhijit Deshpande</span></a>
+          <span class="where">Home</span>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+        </div>
+      </header>
+      <main id="main" tabindex="-1">
+        <div class="wrap">
+          <div class="view">
+            <h1 class="visually-hidden">Abhijit Deshpande — engineer, cricketer, builder</h1>
+            <p class="greet">Hello, I’m Abhijit. Husband and dad first; cricketer, coach and analyst; and a software engineer who writes CAD software for a living. This is my notebook.</p>
+            <p class="tagline">Curiosity is the starting point. Building is the outcome.</p>
+            <a class="feature" href="notes/cricket-analyst.html"><img src="assets/images/cricket-titans.jpg" alt="Abhijit in a white Titans shirt and pads, leaning on a bat with a helmet and gloves in his hand, on a grass field." width="680" height="1024" decoding="async"><div><small>Featured note · Cricket</small><h2>From the crease to the analyst’s laptop</h2><p>Player, coach, club organiser and performance analyst: four ways of looking at the same game.</p><span class="more">Read the note <span aria-hidden="true">→</span></span></div></a>
 
-    <section class="section" aria-labelledby="facets-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE WHOLE PICTURE</p><h2 id="facets-heading">More than a developer</h2></div>
-      </div>
-      <ul class="facets">
+            <div class="section-h"><h2 id="facets-heading">More than a developer</h2></div>
+            <ul class="facets" aria-labelledby="facets-heading">
         <li class="facet">
           <h3>Husband &amp; father</h3>
           <p>Married to Nihira, a musician — which is how I came to build her website, one of the projects I'm proudest of. Also a dad, and a friend to many people I've met through all of the above.</p>
-          <a class="text-link" href="projects.html#nihiramusic">nihiramusic.in <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="projects/nihiramusic.html">nihiramusic.in <span aria-hidden="true">→</span></a>
         </li>
         <li class="facet">
           <h3>Cricketer</h3>
           <p>Player, ICC Level 1 coach and performance analyst. I've worked as an analyst with the German and Luxembourg national teams, and set up a local club that has since reached the Bundesliga.</p>
-          <a class="text-link" href="projects.html#cricketiq">CricketIQ <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="projects/cricketiq.html">CricketIQ <span aria-hidden="true">→</span></a>
         </li>
         <li class="facet">
           <h3>Engineer</h3>
@@ -69,59 +88,36 @@
           <a class="text-link" href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
         </li>
       </ul>
-    </section>
 
-    <section class="section" aria-labelledby="workbench-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">THE WORKBENCH</p><h2 id="workbench-heading">Things I've been building</h2></div>
-        <a class="text-link" href="projects.html">All projects <span aria-hidden="true">→</span></a>
-      </div>
-      <div class="project-grid">
-        <a class="project-card" href="projects.html#nihiramusic">
-          <div class="card-top"><span class="project-number">WEB · MUSIC</span><span class="status status-live">Live</span></div>
-          <h3>nihiramusic.in</h3>
-          <p>A website for a musician that largely maintains itself: new videos and concerts appear automatically. Built in about four days, with me directing an AI development partner.</p>
-          <span class="tags">STATIC SITE · PYTHON · GITHUB ACTIONS</span>
-        </a>
-        <a class="project-card" href="projects.html#cricketiq">
-          <div class="card-top"><span class="project-number">CRICKET · DATA</span><span class="status status-live">Live</span></div>
-          <h3>CricketIQ</h3>
-          <p>Exploring cricket through ball-by-ball data, player profiles and analytical tools — the analyst's side of my cricket, in software.</p>
-          <span class="tags">PYTHON · STREAMLIT</span>
-        </a>
-        <a class="project-card" href="projects.html#visaflow">
-          <div class="card-top"><span class="project-number">AUTOMATION</span><span class="status status-draft">Prototype</span></div>
-          <h3>VisaFlow</h3>
-          <p>An early prototype that reads a passport and extracts its key fields — a first step towards a structured visa-application workflow.</p>
-          <span class="tags">OCR · DOCUMENT AUTOMATION</span>
-        </a>
-      </div>
-    </section>
+            <div class="section-h"><h2>Things I’ve been building</h2><a class="more" href="projects.html">All projects <span aria-hidden="true">→</span></a></div>
+            <ul class="rows project-rows">
+              <li class="row"><div><h3><a href="projects/nihiramusic.html">nihiramusic.in</a></h3><p>A website for a musician that largely maintains itself: new videos and concerts appear automatically. Built in about four days, with me directing an AI development partner.</p><span class="tags">Static site · Python · GitHub Actions</span></div><div class="meta"><span class="status status-live">Live</span></div></li>
+              <li class="row"><div><h3><a href="projects/cricketiq.html">CricketIQ</a></h3><p>Exploring cricket through ball-by-ball data, player profiles and analytical tools — the analyst's side of my cricket, in software.</p><span class="tags">Python · Streamlit</span></div><div class="meta"><span class="status status-live">Live</span></div></li>
+              <li class="row"><div><h3><a href="projects/visaflow.html">VisaFlow</a></h3><p>An early prototype that reads a passport and extracts its key fields — a first step towards a structured visa-application workflow.</p><span class="tags">OCR · Document automation</span></div><div class="meta"><span class="status status-draft">Prototype</span></div></li>
+            </ul>
 
-    <section class="statement" aria-label="A working principle">
-      <p class="eyebrow">A WORKING PRINCIPLE</p>
-      <blockquote>“Build useful things. Understand how they work. Share what you learn.”</blockquote>
-      <p class="statement-note">This site is a work in progress — much like the projects documented here.</p>
-    </section>
+            <section class="statement" aria-label="A working principle">
+              <blockquote>“Build useful things. Understand how they work. Share what you learn.”</blockquote>
+              <p class="small-note">This site is a work in progress — much like the projects documented here.</p>
+            </section>
 
-    <section class="section latest" aria-labelledby="notebook-heading">
-      <div class="section-heading">
-        <div><p class="eyebrow">FROM THE NOTEBOOK</p><h2 id="notebook-heading">Recent writing</h2></div>
-        <a class="text-link" href="notes.html">All notes <span aria-hidden="true">→</span></a>
-      </div>
-      <ul class="note-list">
-      <li class="note-row"><time class="note-date" datetime="2026-11-03">3 NOV 2026</time><div><h3><a href="notes/family-first.html">Husband and dad, before everything</a></h3><p>This site lists projects, roles and experiments. The most important roles in my life don’t have a project page.</p></div><span class="note-type">PERSONAL</span></li>
-      <li class="note-row"><time class="note-date" datetime="2026-11-03">3 NOV 2026</time><div><h3><a href="notes/cricket-analyst.html">From the crease to the analyst’s laptop</a></h3><p>Player, coach, club organiser and performance analyst: four ways of looking at the same game.</p></div><span class="note-type">PERSONAL · CRICKET</span></li>
-      <li class="note-row"><time class="note-date" datetime="2026-11-03">3 NOV 2026</time><div><h3><a href="notes/built-on-curves.html">A career built on curves</a></h3><p>From a master’s degree in computational geometry to writing CAD software, and why geometry has stayed at the centre.</p></div><span class="note-type">PERSONAL · ENGINEERING</span></li>
-      </ul>
-    </section>
-  </main>
-  <footer class="site-footer">
-    <a class="wordmark" href="index.html" aria-label="Abhijit Deshpande — home">ABHIJIT<span aria-hidden="true">.</span></a>
-    <span>Independent by design. Built one experiment at a time.</span>
-    <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
-    <small>© <span data-year>2026</span> Abhijit Deshpande</small>
-  </footer>
+            <div class="section-h"><h2>Recent writing</h2><a class="more" href="notes.html">All notes <span aria-hidden="true">→</span></a></div>
+            <ul class="rows note-list">
+              <li class="row note-row"><div><h3><a href="notes/family-first.html">Husband and dad, before everything</a></h3><p>This site lists projects, roles and experiments. The most important roles in my life don’t have a project page.</p></div><div class="meta">Personal<br><time datetime="2026-11-03">3 Nov 2026</time></div></li><li class="row note-row"><div><h3><a href="notes/cricket-analyst.html">From the crease to the analyst’s laptop</a></h3><p>Player, coach, club organiser and performance analyst: four ways of looking at the same game.</p></div><div class="meta">Personal · Cricket<br><time datetime="2026-11-03">3 Nov 2026</time></div></li><li class="row note-row"><div><h3><a href="notes/built-on-curves.html">A career built on curves</a></h3><p>From a master’s degree in computational geometry to writing CAD software, and why geometry has stayed at the centre.</p></div><div class="meta">Personal · Engineering<br><time datetime="2026-11-03">3 Nov 2026</time></div></li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <span>© <span data-year>2026</span> Abhijit Deshpande</span>
+          <span>Independent by design. Built one experiment at a time.</span>
+          <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/site-map.js"></script>
   <script src="assets/site.js"></script>
 </body>
 </html>
