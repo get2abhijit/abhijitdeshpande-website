@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Untis timetable alerts — Abhijit Deshpande</title>
+  <meta name="description" content="A small bot that watches the school timetable and sends a Telegram message when something changes, built with AI assistance and kept in my own accounts.">
+  <meta name="author" content="Abhijit Deshpande">
+  <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
+  <meta name="color-scheme" content="light dark">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Abhijit Deshpande">
+  <meta property="og:title" content="Untis timetable alerts — Abhijit Deshpande">
+  <meta property="og:description" content="A small bot that watches the school timetable and sends a Telegram message when something changes, built with AI assistance and kept in my own accounts.">
+  <meta property="og:locale" content="en_GB">
+  <link rel="canonical" href="https://get2abhijit.github.io/abhijitdeshpande-website/projects/untis-notifier.html">
+  <meta property="og:url" content="https://get2abhijit.github.io/abhijitdeshpande-website/projects/untis-notifier.html">
+  <meta property="og:image" content="https://get2abhijit.github.io/abhijitdeshpande-website/assets/images/abhijit.jpg">
+  <link rel="alternate" type="application/rss+xml" title="Abhijit Deshpande — Field notes" href="../feed.xml">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preload" href="../assets/fonts/dm-sans-roman.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/site.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-root="../" data-page="projects/untis-notifier.html">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Site">
+      <div class="side-top">
+        <a class="side-id" href="../index.html"><img src="../assets/images/abhijit-avatar.jpg" width="56" height="56" alt=""><span><strong>Abhijit Deshpande</strong><span>Husband, dad, cricketer, engineer</span></span></a>
+        <button class="side-close" type="button" aria-label="Close menu">✕</button>
+      </div>
+      <nav class="sidenav" aria-label="Main">
+        <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../projects.html" class="active-section" aria-current="true">Projects<span class="count" data-count="projects"></span></a>
+          <div data-subnav="projects"></div></li>
+        <li><a href="../notes.html">Notes<span class="count" data-count="notes"></span></a></li>
+        <li><a href="../now.html">Now</a></li>
+        <li><a href="../about.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="side-foot">
+        <a class="side-mark-link" href="../index.html" aria-label="Abhijit Deshpande, home"><img src="../assets/favicon.svg" width="36" height="36" alt=""></a>
+        <div class="side-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack<span class="visually-hidden"> (opens in a new tab)</span></a></div>
+      </div>
+    </aside>
+    <div class="scrim"></div>
+    <div class="col">
+      <header class="topbar">
+        <div class="wrap">
+          <a class="brand" href="../index.html" aria-label="Abhijit Deshpande, home"><img src="../assets/favicon.svg" width="34" height="34" alt=""><span>Abhijit Deshpande</span></a>
+          <span class="where">Projects</span>
+          <button class="menu-btn" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+        </div>
+      </header>
+      <div class="crumbbar"><div class="wrap"><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li><span aria-current="page">Untis timetable alerts</span></li></ol></nav></div></div>
+    <main id="main" tabindex="-1">
+        <div class="wrap">
+          <div class="view">
+            <a class="backlink" data-back href="../projects.html">← All projects</a>
+            <article>
+              <header class="article-head">
+                <p class="cap">Automation · Python · Telegram</p>
+                <h1 class="page-h1">The timetable changed. The app didn’t tell us.</h1>
+                <p class="detail-status"><span class="status status-live">Live</span><span>Working, for my own family’s use. Not a product.</span></p>
+                <p class="lead">A small WebUntis notification bot, a little AI-assisted development, and one very concerned Datenschutzbeauftragter.</p>
+                <div class="note-cta">
+                  <a class="button button-dark" href="https://get2abhijit.substack.com/p/the-timetable-changed-the-app-didnt" target="_blank" rel="noopener noreferrer">Also on Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
+                </div>
+              </header>
+              <div data-toc-m></div>
+              <div class="prose">
+        <h2>The morning it went wrong</h2>
+        <p>A few weeks ago, a cancelled first lesson was quietly put back on the timetable.</p>
+        <p>The change was made the afternoon before. Nobody announced it. No notification, no message, no dramatic announcement from the school administration. It simply appeared in the app, quietly, the way WebUntis changes tend to happen.</p>
+        <p>A few parents missed it. The next morning brought the inevitable chaos: children who thought they had a free first period, parents scrambling to rearrange their mornings, and a flurry of messages in the class WhatsApp group.</p>
+        <p>You know the drill. That was the push I needed.</p>
+        <p>German schools often use WebUntis, and the timetable can change at short notice: cancellations, room swaps, substitute teachers, and the occasional lesson that gets resurrected overnight. We had developed a habit of checking the app every evening to see what the following day looked like. A tiny chore, really. But somehow, the evening you forget to check is precisely the evening something changes.</p>
+        <p>As far as I could tell, the official app’s push notifications cover messages, but not actual timetable changes. So I decided to build the notification I wanted.</p>
+
+        <h2>Yes, I know apps for this exist</h2>
+        <p>I looked at them. Some are probably very good.</p>
+        <p>But they generally require my school login and access to my family’s calendar. And I live in Germany, where data protection is not just a regulation. It’s practically a national pastime.</p>
+        <p>My internal Datenschutzbeauftragter (unpaid, permanently on duty, and currently played by me) was immediately concerned. He requested a data processing agreement, a risk assessment, a privacy impact assessment, and possibly a meeting to discuss whether the meeting itself required documentation. His preliminary recommendation was to reject the entire project. After some negotiations, I decided to bypass him.</p>
+        <p>More seriously, I wasn’t comfortable handing over school credentials and family calendar access to yet another third-party service. I’d rather keep the data within accounts and services I already control.</p>
+        <p>So, naturally, I decided to write my own software. Because nothing says data minimisation quite like maintaining your own code.</p>
+
+        <h2>What it does</h2>
+        <p>A small script checks the timetable several times a day and sends a Telegram message whenever something differs from the previous check. Things like:</p>
+        <ul>
+          <li>“First lesson cancelled.”</li>
+          <li>“Room changed from 204 to 108.”</li>
+          <li>“Surprise! That cancelled lesson is back.”</li>
+        </ul>
+        <p>There is also a short briefing the evening before each school day, and a second check around 6 am to catch overnight changes before everyone starts getting ready.</p>
+        <p>It runs as a scheduled job using GitHub Actions, in a private repository. No server to maintain, no hosting bill, no infrastructure to babysit. It uses only a small fraction of GitHub’s free monthly workflow minutes. Not quite enterprise architecture, but it does the job.</p>
+
+        <h2>A few small decisions</h2>
+        <h3>QR login instead of passwords</h3>
+        <p>I use the QR key generated by the school’s mobile app rather than storing a username and password. The script never sees my actual password, and I can revoke access by generating a new QR code. One less credential floating around the internet. My Datenschutzbeauftragter approves. For now.</p>
+        <h3>Telegram instead of a calendar feed</h3>
+        <p>I considered a calendar subscription, but subscribed calendars refresh whenever they feel like it. If the first lesson is suddenly back on, finding out three hours later isn’t particularly useful. Telegram gives me a direct notification, which is exactly what I wanted.</p>
+        <h3>A little paranoia is a good thing</h3>
+        <p>I didn’t want a tool that panics every time the school server has a bad day. If the server suddenly returns an empty timetable where lessons existed moments ago, the script doesn’t conclude that school has been cancelled for everyone. It waits for three consecutive empty responses before accepting that something has changed. Similarly, if the server is unreachable several times in a row, I get one warning rather than forty increasingly desperate messages.</p>
+        <p>A notification system you trust is one that rarely cries wolf.</p>
+
+        <h2>The AI part</h2>
+        <p>I built it over a couple of sessions with Claude. What worked was essentially what works with another developer: small steps, something to verify at the end of each step, and no guessing when the information could be read directly.</p>
+        <p>We started with an existing open-source client that already documented how the mobile interface works. Before touching real school data, we tested everything against a mock school server and a mock Telegram endpoint. That way, the silly mistakes happened somewhere harmless rather than in the middle of a school morning.</p>
+        <p>The first real run was surprisingly uneventful. The timetable integration worked as expected. Telegram, on the other hand, needed a little convincing: setting up the bot took a couple of API calls, some trial and error, and some back-and-forth. Apparently, even bots need a little onboarding. Once that was sorted, the first notifications came through exactly as intended.</p>
+
+        <h2>Good to know</h2>
+        <ul>
+          <li>It relies on an unofficial interface that could change without notice.</li>
+          <li>It isn’t real-time. A change made at 9 pm, after the evening check, won’t be picked up until the next scheduled run.</li>
+          <li>Some schools disable QR-code sharing, which makes this approach impossible.</li>
+        </ul>
+        <p>It is a personal tool for our family, not a commercial product, and it has no affiliation with Untis GmbH. The code is in a private repository, so there is no link to it.</p>
+
+        <h2>Was it worth building?</h2>
+        <p>Absolutely. The evening timetable-checking ritual is gone. We get a short summary before the next school day and a notification when something actually changes.</p>
+        <p>It’s a small problem, solved with a small piece of software. Nothing revolutionary. But that’s what I like about these projects: finding an everyday annoyance, understanding what’s happening behind the scenes, and building something that makes life a little easier.</p>
+        <p>And perhaps most importantly, my internal Datenschutzbeauftragter has finally approved something. He hasn’t signed the paperwork yet, though.</p>
+        <p>If you’re dealing with similar WebUntis quirks or have built something along these lines, I’m happy to compare notes.</p>
+      </div>
+              <ul class="detail-meta" aria-label="Technologies"><li>Python</li><li>GitHub Actions</li><li>Telegram</li><li>WebUntis</li></ul>
+              <div class="detail-links"><a href="https://get2abhijit.substack.com/p/the-timetable-changed-the-app-didnt" target="_blank" rel="noopener noreferrer">Read it on Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+            </article>
+            <nav class="pager" aria-label="More projects" data-pager hidden></nav>
+          </div>
+        </div>
+      </main>
+      <footer class="site-footer">
+        <div class="wrap">
+          <span>© <span data-year>2026</span> Abhijit Deshpande</span>
+          <span>Independent by design. Built one experiment at a time.</span>
+          <div class="footer-links"><a href="https://github.com/get2abhijit" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://substack.com/@get2abhijit" target="_blank" rel="noopener noreferrer">Substack <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="../assets/site-map.js"></script>
+  <script src="../assets/site.js"></script>
+</body>
+</html>
