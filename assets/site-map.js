@@ -21,6 +21,7 @@ window.SITE = {
     { id: 'engineering', title: 'Engineering' }
   ],
   projects: [
+    { href: 'projects/player-profiles.html', title: 'Player profiles', status: 'In progress' },
     { href: 'projects/untis-notifier.html', title: 'Untis timetable alerts', status: 'Live' },
     { href: 'projects/nihiramusic.html', title: 'nihiramusic.in', status: 'Live' },
     { href: 'projects/cricketiq.html', title: 'CricketIQ', status: 'Live' },
