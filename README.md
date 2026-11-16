@@ -2,7 +2,7 @@
 
 A personal technology lab and journal. Plain HTML, CSS and vanilla JavaScript: no build step, package manager, backend, cookies, tracking or third-party requests.
 
-Live at: https://get2abhijit.github.io/abhijitdeshpande-website/
+Live at: https://cricanalysis.in/ (trial domain; also reachable at https://get2abhijit.github.io/abhijitdeshpande-website/)
 
 ## Structure
 
@@ -112,14 +112,17 @@ Colours, fonts and spacing are variables at the top of `assets/site.css`. The si
 
 DM Sans, DM Mono and Playfair Display are served from `assets/fonts/` (Latin subset, WOFF2). No requests go to Google or any other third party.
 
-## When the custom domain is bought (abhijitdeshpande.in)
+## Custom domain
 
-1. Search and replace `https://get2abhijit.github.io/abhijitdeshpande-website/` with `https://abhijitdeshpande.in/` in every `.html` file, `feed.xml`, `sitemap.xml`, `robots.txt` and this README. (`404.html` and the other pages use relative paths and need nothing else.)
-2. In the repository: **Settings → Pages → Custom domain**, enter `abhijitdeshpande.in` and save (GitHub adds a `CNAME` file).
+The site currently runs on the trial domain `cricanalysis.in` (the `CNAME` file holds the domain). To move to `abhijitdeshpande.in` later:
+
+1. Search and replace `https://cricanalysis.in/` with `https://abhijitdeshpande.in/` in every `.html` file, `feed.xml`, `sitemap.xml`, `robots.txt` and this README. (`404.html` and the other pages use relative paths and need nothing else.)
+2. In the repository: **Settings → Pages → Custom domain**, enter `abhijitdeshpande.in` and save (GitHub updates the `CNAME` file).
 3. At the registrar's DNS settings, add:
    - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - optional `AAAA` records for `@` → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
    - `CNAME` record for `www` → `get2abhijit.github.io`
 4. Wait for the DNS check to pass, then tick **Enforce HTTPS**.
 5. Optional: set up an email address on the domain and add it to `about.html`.
 
-`robots.txt` only takes effect at the root of a domain, so it starts working once the custom domain is live. Until then, the sitemap can be submitted directly in Google Search Console.
+`robots.txt` only takes effect at the root of a domain, so it works once the custom domain is live.

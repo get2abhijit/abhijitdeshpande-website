@@ -15,7 +15,7 @@ import re
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-BASE = "https://get2abhijit.github.io/abhijitdeshpande-website/"
+BASE = "https://cricanalysis.in/"
 errors, warnings = [], []
 
 
