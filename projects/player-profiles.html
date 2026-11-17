@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Player profiles — Abhijit Deshpande</title>
-  <meta name="description" content="A cricketer’s side project: adding batting hand and bowling style to every player in the free Cricsheet register, starting with men’s T20 internationals.">
+  <meta name="description" content="An independent cricket data project enriching the Cricsheet player register with batting hands, bowling styles and playing roles, starting with men's T20 internationals.">
   <meta name="author" content="Abhijit Deshpande">
   <meta name="theme-color" content="#f1f4f3" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0f1a1f" media="(prefers-color-scheme: dark)">
@@ -36,12 +36,12 @@
       </div>
       <nav class="sidenav" aria-label="Main">
         <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../projects.html" class="active-section" aria-current="true">Projects<span class="count" data-count="projects"></span></a>
-          <div data-subnav="projects"></div></li>
-        <li><a href="../notes.html">Notes<span class="count" data-count="notes"></span></a></li>
-        <li><a href="../now.html">Now</a></li>
-        <li><a href="../about.html">About</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../projects.html" class="active-section" aria-current="true">Projects<span class="count" data-count="projects"></span></a>
+            <div data-subnav="projects"></div></li>
+          <li><a href="../notes.html">Notes<span class="count" data-count="notes"></span></a></li>
+          <li><a href="../now.html">Now</a></li>
+          <li><a href="../about.html">About</a></li>
         </ul>
       </nav>
       <div class="side-foot">
@@ -59,7 +59,7 @@
         </div>
       </header>
       <div class="crumbbar"><div class="wrap"><nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="../index.html">Home</a></li><li><a href="../projects.html">Projects</a></li><li><span aria-current="page">Player profiles</span></li></ol></nav></div></div>
-    <main id="main" tabindex="-1">
+      <main id="main" tabindex="-1">
         <div class="wrap">
           <div class="view">
             <a class="backlink" data-back href="../projects.html">← All projects</a>
@@ -68,43 +68,43 @@
                 <p class="cap">Cricket · Open data · Work in progress</p>
                 <h1 class="page-h1">Who bats left, who bowls what</h1>
                 <p class="detail-status"><span class="status status-draft">In progress</span><span>A working demo. Plenty of gaps still to fill.</span></p>
-                <p class="lead">Free ball-by-ball data tells you who scored the runs and who took the wicket. It doesn’t tell you that the batter was left-handed or that the bowler bowled left-arm spin. I’m slowly filling that in.</p>
+                <p class="lead">Free ball-by-ball data tells you who scored the runs and who took the wickets. It doesn't tell you whether a batter was left-handed or whether a bowler delivered left-arm spin. I'm slowly filling in those gaps.</p>
                 <div class="note-cta">
                   <a class="button button-dark" href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Player profiles demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
                 </div>
               </header>
               <div data-toc-m></div>
               <div class="prose">
-        <h2>A scorecard without hands</h2>
-        <p><a class="inline-link" href="https://cricsheet.org/" target="_blank" rel="noopener noreferrer">Cricsheet</a> is one of the best things to happen to cricket analysis: ball-by-ball data for thousands of matches, free, with every player given a stable ID. Much of what I do with cricket data starts there.</p>
-        <p>What it doesn’t carry is how a player plays. The register has names and IDs, not batting hands or bowling styles. For an analyst that is half the picture. How does a left-hander fare against off-spin? Does a top order struggle against left-arm pace? You can’t ask either question until every ball knows whose hand and whose style were involved.</p>
+                <h2>A scorecard without hands</h2>
+                <p><a class="inline-link" href="https://cricsheet.org/" target="_blank" rel="noopener noreferrer">Cricsheet</a> is one of the best things to happen to cricket analysis: ball-by-ball data for thousands of matches, free, with every player given a stable ID. Much of what I do with cricket data starts there.</p>
+                <p>What it doesn't carry is how a player plays. The register has names and IDs, not batting hands or bowling styles. For an analyst, that's only half the picture. How does a left-hander fare against off-spin? Does a top order struggle against left-arm pace? You can't ask either question until every ball knows whose hand and whose style were involved.</p>
 
-        <h2>Why it matters to me</h2>
-        <p>Most of my cricket life is in associate cricket: playing, coaching and analysis in Germany. The big names are easy; their profiles are everywhere. The opening batter from Austria or the spinner from Rwanda is a different story, and those are exactly the players I end up looking at.</p>
-        <p>If the data doesn’t know who bowls left-arm orthodox, the analysis starts with guesswork. I’d rather it started with the facts.</p>
+                <h2>Why it matters to me</h2>
+                <p>I've been involved in cricket in different capacities over the years, but much of my more recent involvement has been in associate cricket: playing, coaching and analysis in Germany. The big names are easy; their profiles are everywhere. The opening batter from Austria or the spinner from Rwanda is a different story, and those are exactly the players I increasingly find myself looking at.</p>
+                <p>If the data doesn't know who bowls left-arm orthodox, the analysis starts with guesswork. I'd rather it started with the facts.</p>
 
-        <h2>What it is</h2>
-        <p>A player register that sits on top of Cricsheet. For each player in men’s T20 internationals it records the batting hand, the bowling arm and style, and, where known, the playing role. Everything is keyed by the Cricsheet ID, so it lines up with the match data directly, and it can be downloaded as a spreadsheet.</p>
+                <h2>What it is</h2>
+                <p>A player register that sits on top of Cricsheet. For each player in men's T20 internationals it records the batting hand, the bowling arm and style, and, where known, the playing role. Everything is keyed by the Cricsheet ID, so it lines up with the match data directly, and it can be downloaded as a spreadsheet.</p>
 
-        <h2>The demo</h2>
-        <p>Cricket Player Profiles is a small web page you can open and click around. It covers close to 3,900 players across more than a hundred teams, with an overview by team, the mix of bowling styles, a searchable player table, and a review queue that lists the players still missing information, most-capped first.</p>
-        <p><a class="inline-link" href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Open the Cricket Player Profiles demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
+                <h2>The demo</h2>
+                <p>The Cricket Player Profiles demo covers close to 3,900 players across more than a hundred teams, with an overview by team, the mix of bowling styles, a searchable player table, and a review queue that lists the players still missing information, most-capped first.</p>
+                <p><a class="inline-link" href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Open the Cricket Player Profiles demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
 
-        <h2>Where it stands</h2>
-        <p>The well-known names are done. Almost every player has a batting hand, and most have a bowling style or are marked as not bowling. What’s left is the long tail.</p>
-        <p>The remaining gaps are mostly associate players whose profiles don’t exist anywhere online, or exist in one place under a different spelling. No script solves that. It takes someone who knows the player, or a scorecard read carefully. So I go through the review queue by hand, a few players at a time, and once I’ve entered something it isn’t overwritten by the next automatic update.</p>
+                <h2>Where it stands</h2>
+                <p>Most of the well-known names are covered. Almost every player has a batting hand, and most have a bowling style recorded or are marked as non-bowlers. What's left is the long tail.</p>
+                <p>The remaining gaps are mostly associate players whose profiles don't exist anywhere online, or exist in one place under a different spelling. No script solves that. It takes someone who knows the player, or a scorecard read carefully. So I go through the review queue by hand, a few players at a time, and once I've entered something it isn't overwritten by the next automatic update.</p>
 
-        <h2>Still lots to do</h2>
-        <ul>
-          <li>Close the remaining gaps, team by team, starting with the teams I know best.</li>
-          <li>Playing roles: only about a third of players have one so far.</li>
-          <li>Put it to work where it was always meant to go: matchup analysis in <a class="inline-link" href="cricketiq.html">CricketIQ</a>.</li>
-        </ul>
-        <p>If you know a player whose batting hand or bowling style is missing or wrong, especially in associate cricket, I’d like to hear from you. <a class="inline-link" href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a> is the easiest way to reach me.</p>
+                <h2>Still plenty to do</h2>
+                <ul>
+                  <li>Close the remaining gaps, team by team, starting with the teams I know best.</li>
+                  <li>Playing roles: currently recorded for only about a third of the players.</li>
+                  <li>Put it to work where it was always meant to go: matchup analysis in <a class="inline-link" href="cricketiq.html">CricketIQ</a>.</li>
+                </ul>
+                <p>If you know a player whose batting hand or bowling style is missing or wrong, especially in associate cricket, I'd like to hear from you. <a class="inline-link" href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a> is the easiest way to reach me.</p>
 
-        <h2>Credits</h2>
-        <p>Match data and the player register come from Cricsheet. Playing styles come from public player profiles. This is a passion project, not affiliated with Cricsheet or any of those sites, and not a product.</p>
-      </div>
+                <h2>Credits</h2>
+                <p>Match data and the player register come from Cricsheet. Playing styles come from public player profiles. This is an independent passion project, not affiliated with Cricsheet or any of the other sources, and not intended as a commercial product.</p>
+              </div>
               <ul class="detail-meta" aria-label="Topics"><li>Cricket</li><li>Cricsheet</li><li>Open data</li><li>Python</li></ul>
               <div class="detail-links"><a href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Cricket Player Profiles <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
             </article>
