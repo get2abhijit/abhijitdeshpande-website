@@ -2,7 +2,7 @@
 
 A personal technology lab and journal. Plain HTML, CSS and vanilla JavaScript: no build step, package manager, backend, cookies, tracking or third-party requests.
 
-Live at: https://cricanalysis.in/ (trial domain; also reachable at https://get2abhijit.github.io/abhijitdeshpande-website/)
+Live at: https://abhijitdeshpande.in/
 
 ## Structure
 
@@ -114,15 +114,17 @@ DM Sans, DM Mono and Playfair Display are served from `assets/fonts/` (Latin sub
 
 ## Custom domain
 
-The site currently runs on the trial domain `cricanalysis.in` (the `CNAME` file holds the domain). To move to `abhijitdeshpande.in` later:
+The site is served at `https://abhijitdeshpande.in/` (the `CNAME` file holds the domain; `www.abhijitdeshpande.in` redirects to it). The old address `https://get2abhijit.github.io/abhijitdeshpande-website/` redirects there automatically.
 
-1. Search and replace `https://cricanalysis.in/` with `https://abhijitdeshpande.in/` in every `.html` file, `feed.xml`, `sitemap.xml`, `robots.txt` and this README. (`404.html` and the other pages use relative paths and need nothing else.)
-2. In the repository: **Settings → Pages → Custom domain**, enter `abhijitdeshpande.in` and save (GitHub updates the `CNAME` file).
-3. At the registrar's DNS settings, add:
+Setup, for reference:
+
+1. Absolute URLs (canonical, og:url, og:image, `sitemap.xml`, `feed.xml`, `robots.txt`, `tools/check_site.py`) use `https://abhijitdeshpande.in/`. Internal links are relative and need nothing.
+2. Repository **Settings → Pages → Custom domain** is `abhijitdeshpande.in`, with **Enforce HTTPS** ticked.
+3. DNS at the registrar:
    - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - optional `AAAA` records for `@` → `2606:50c0:8000::153`, `2606:50c0:8001::153`, `2606:50c0:8002::153`, `2606:50c0:8003::153`
    - `CNAME` record for `www` → `get2abhijit.github.io`
-4. Wait for the DNS check to pass, then tick **Enforce HTTPS**.
-5. Optional: set up an email address on the domain and add it to `about.html`.
+
+To change domain again, search and replace `https://abhijitdeshpande.in/` across the files in step 1 and update `CNAME`.
 
 `robots.txt` only takes effect at the root of a domain, so it works once the custom domain is live.
