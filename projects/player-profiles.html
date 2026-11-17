@@ -67,11 +67,10 @@
               <header class="article-head">
                 <p class="cap">Cricket · Open data · Work in progress</p>
                 <h1 class="page-h1">Who bats left, who bowls what</h1>
-                <p class="detail-status"><span class="status status-draft">In progress</span><span>Two working demos. Plenty of gaps still to fill.</span></p>
+                <p class="detail-status"><span class="status status-draft">In progress</span><span>A working demo. Plenty of gaps still to fill.</span></p>
                 <p class="lead">Free ball-by-ball data tells you who scored the runs and who took the wicket. It doesn’t tell you that the batter was left-handed or that the bowler bowled left-arm spin. I’m slowly filling that in.</p>
                 <div class="note-cta">
                   <a class="button button-dark" href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Player profiles demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
-                  <a class="button button-dark" href="https://get2abhijit.github.io/registry-enrich/" target="_blank" rel="noopener noreferrer">Registry rebuild demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a>
                 </div>
               </header>
               <div data-toc-m></div>
@@ -87,14 +86,9 @@
         <h2>What it is</h2>
         <p>A player register that sits on top of Cricsheet. For each player in men’s T20 internationals it records the batting hand, the bowling arm and style, and, where known, the playing role. Everything is keyed by the Cricsheet ID, so it lines up with the match data directly, and it can be downloaded as a spreadsheet.</p>
 
-        <h2>Two demos, one idea</h2>
-        <p>There are two versions online at the moment.</p>
-        <h3>Cricket Player Profiles</h3>
-        <p>The first working version. It covers close to 3,900 players across more than a hundred teams, with an overview by team, the mix of bowling styles, a searchable player table, and a review queue that lists the players still missing information, most-capped first.</p>
+        <h2>The demo</h2>
+        <p>Cricket Player Profiles is a small web page you can open and click around. It covers close to 3,900 players across more than a hundred teams, with an overview by team, the mix of bowling styles, a searchable player table, and a review queue that lists the players still missing information, most-capped first.</p>
         <p><a class="inline-link" href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Open the Cricket Player Profiles demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
-        <h3>Registry rebuild</h3>
-        <p>A cleaner rebuild of the same idea, focused on players active in men’s T20Is since 2020. It is stricter about where information comes from: it only uses sources that allow automated access, checks it has the right player before accepting anything, and when it can’t find a style it says why rather than guessing. A “Gaps and reasons” view shows exactly what is missing and what would fix it.</p>
-        <p><a class="inline-link" href="https://get2abhijit.github.io/registry-enrich/" target="_blank" rel="noopener noreferrer">Open the registry rebuild demo <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></p>
 
         <h2>Where it stands</h2>
         <p>The well-known names are done. Almost every player has a batting hand, and most have a bowling style or are marked as not bowling. What’s left is the long tail.</p>
@@ -104,7 +98,6 @@
         <ul>
           <li>Close the remaining gaps, team by team, starting with the teams I know best.</li>
           <li>Playing roles: only about a third of players have one so far.</li>
-          <li>Bring the two versions together into a single register.</li>
           <li>Put it to work where it was always meant to go: matchup analysis in <a class="inline-link" href="cricketiq.html">CricketIQ</a>.</li>
         </ul>
         <p>If you know a player whose batting hand or bowling style is missing or wrong, especially in associate cricket, I’d like to hear from you. <a class="inline-link" href="https://www.linkedin.com/in/get2abhijit/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a> is the easiest way to reach me.</p>
@@ -113,7 +106,7 @@
         <p>Match data and the player register come from Cricsheet. Playing styles come from public player profiles. This is a passion project, not affiliated with Cricsheet or any of those sites, and not a product.</p>
       </div>
               <ul class="detail-meta" aria-label="Topics"><li>Cricket</li><li>Cricsheet</li><li>Open data</li><li>Python</li></ul>
-              <div class="detail-links"><a href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Cricket Player Profiles <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a><a href="https://get2abhijit.github.io/registry-enrich/" target="_blank" rel="noopener noreferrer">Registry rebuild <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
+              <div class="detail-links"><a href="https://get2abhijit.github.io/cricket-player-profile-data/#overview" target="_blank" rel="noopener noreferrer">Cricket Player Profiles <span aria-hidden="true">↗</span><span class="visually-hidden"> (opens in a new tab)</span></a></div>
             </article>
             <nav class="pager" aria-label="More projects" data-pager hidden></nav>
           </div>
